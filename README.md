@@ -17,15 +17,17 @@ Usage
 var emitter = Emitter();
 
 emitter.on('eventName', listener);
-emitter.once('eventName', listener);
+emitter.once('eventName', listener); // only listen once
 
-emitter.off('eventName', listener);
-emitter.off('eventName');
-emitter.off();
+emitter.off('eventName', listener); // remove specific listener
+emitter.off('eventName'); // remove all listeners of this event
+emitter.off(); // remove all listeners
 
-emitter.trigger('eventName', arg1, arg2…)
+emitter.trigger('eventName', arg1, arg2…); // arguments are optional
 
 emitter.hasListeners('eventName');
+
+emitter.hasListeners(); // throws an error (not yet implemented)
 ```
 
 Testing
