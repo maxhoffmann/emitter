@@ -1,5 +1,5 @@
-frozen closure: Emitter
-==========
+Emitter
+=======
 
 Event emitter implementation using the “frozen closure” pattern as [described by Douglas Crockford](http://www.ustream.tv/recorded/46640057). Heavily inspired by [component/emitter](https://github.com/component/emitter).
 
@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```bash
-npm install maxhoffmann/fc-emitter --save
+npm install maxhoffmann/emitter --save
 ```
 
 Usage
