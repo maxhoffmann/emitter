@@ -1,0 +1,14 @@
+{
+  "name": "fc-emitter",
+  "version": "0.0.1",
+  "description": "event emitter built with the frozen closure pattern",
+  "main": "index.js",
+  "scripts": {
+   "test": "qunit -c index.js -d Emitter:index.js -t tests/tests.js -l {errors:true tests:true summary:true}"
+  },
+  "author": "Maximilian Hoffmann",
+  "license": "MIT",
+  "devDependencies": {
+    "qunit": "^0.6.4"
+  }
+}
