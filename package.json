@@ -8,6 +8,7 @@
     "url" : "https://github.com/maxhoffmann/emitter.git"
   },
   "scripts": {
+    "build": "webpack index.js dist/emitter.js --optimize-minimize --output-library Emitter --output-library-target umd --progress --colors",
     "test": "qunit -c index.js -d Emitter:index.js -t tests/tests.js -l {errors:true tests:true summary:true}"
   },
   "author": "Maximilian Hoffmann",
