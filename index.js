@@ -25,13 +25,11 @@ function Emitter() {
     var specificListeners = listeners[event];
     if (!specificListeners) return instance;
 
-    // remove all handlers
     if (arguments.length === 1) {
       delete listeners[event];
       return instance;
     }
 
-    // remove specific handler
     specificListeners.some(function(specificListener, index) {
       if (specificListener !== listener && specificListener.listener !== listener) return;
       specificListeners.splice(index, 1);
