@@ -31,10 +31,8 @@ test('trigger', function() {
   emitter.on('test', function(data) {
     ok(true, 'triggered test event');
     ok(data, 'passed data to listener');
-    start();
   });
 
-  stop();
   emitter.trigger('test', true);
 });
 
