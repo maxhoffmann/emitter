@@ -5,6 +5,7 @@ Event emitter implementation using the “frozen closure” pattern as [describe
 
 Browser support: ES5 compatible browsers (IE9+)
 
+
 Installation
 ------------
 
@@ -35,11 +36,19 @@ emitter.hasListeners(); // returns true if any listeners are added
 
 __Note:__ This library is built with webpack to the UMD format. You can therefore use it with common.js and amd loaders or as a global variable.
 
+
 Testing
 -------
 
 - `cd` into directory
 - run `npm test`
+
+
+Development
+-----------
+
+`npm run build` to create a minimized and UMD format compatible version of the source file.
+
 
 LICENSE
 -------
