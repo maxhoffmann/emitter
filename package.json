@@ -1,6 +1,6 @@
 {
   "name": "maxhoffmann-emitter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "event emitter built with the frozen closure pattern",
   "main": "index.js",
   "repository": {
@@ -13,6 +13,7 @@
   "author": "Maximilian Hoffmann",
   "license": "MIT",
   "devDependencies": {
-    "qunit": "^0.6.4"
+    "qunit": "^0.6.4",
+    "webpack": "^1.1.0-beta2"
   }
 }
