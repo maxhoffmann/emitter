@@ -16,6 +16,8 @@ Usage
 -----
 
 ```js
+var Emitter = require('maxhoffmann-emitter');
+
 var emitter = Emitter();
 
 emitter.on('eventName', listener);
@@ -30,6 +32,8 @@ emitter.trigger('eventName', arg1, arg2…); // arguments are optional
 emitter.hasListeners('eventName');
 emitter.hasListeners(); // returns true if any listeners are added
 ```
+
+__Note:__ This library is built with webpack to the UMD format. You can therefore use it with common.js and amd loaders or as a global variable.
 
 Testing
 -------
