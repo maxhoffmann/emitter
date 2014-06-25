@@ -56,7 +56,7 @@ function Emitter() {
   }
 
   function hasListeners(event) {
-    if (!event) throw new Error('missing event parameter');
+    if (!arguments.length) return !!Object.keys(listeners).length;
     return !!(listeners[event] && listeners[event].length);
   }
 

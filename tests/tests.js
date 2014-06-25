@@ -37,7 +37,7 @@ test('trigger', function() {
 });
 
 test('off', function() {
-  expect(9);
+  expect(10);
 
   var emitter = Emitter();
 
@@ -61,9 +61,9 @@ test('off', function() {
   ok(!emitter.hasListeners('foo'), 'removed listener for first event');
   ok(!emitter.hasListeners('bar'), 'removed listener for second event');
 
-  throws(function() {
-    emitter.hasListeners();
-  }, 'hasListeners throws without passing an event');
+  ok(!emitter.hasListeners(), 'has no listeners');
+  emitter.on('foo', testListener);
+  ok(emitter.hasListeners(), 'has listeners');
 });
 
 test('once', function() {
