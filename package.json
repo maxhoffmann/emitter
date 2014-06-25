@@ -1,5 +1,5 @@
 {
-  "name": "fc-emitter",
+  "name": "maxhoffmann-emitter",
   "version": "0.0.1",
   "description": "event emitter built with the frozen closure pattern",
   "main": "index.js",
