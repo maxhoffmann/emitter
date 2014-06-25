@@ -28,8 +28,7 @@ emitter.off(); // remove all listeners
 emitter.trigger('eventName', arg1, arg2…); // arguments are optional
 
 emitter.hasListeners('eventName');
-
-emitter.hasListeners(); // throws an error (not yet implemented)
+emitter.hasListeners(); // returns true if any listeners are added
 ```
 
 Testing
