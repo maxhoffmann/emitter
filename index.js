@@ -13,13 +13,11 @@ function Emitter() {
   function on(event, listener) {
     if (!listeners[event]) listeners[event] = [];
     listeners[event].push(listener);
-    return instance;
   }
 
   function off(event, listener) {
     if (!arguments.length) {
       listeners = {};
-      return instance;
     }
 
     var specificListeners = listeners[event];
@@ -27,7 +25,6 @@ function Emitter() {
 
     if (arguments.length === 1) {
       delete listeners[event];
-      return instance;
     }
 
     specificListeners.some(function(specificListener, index) {
@@ -36,7 +33,6 @@ function Emitter() {
       return true;
     });
 
-    return instance;
   }
 
   function trigger(event) {
@@ -50,7 +46,6 @@ function Emitter() {
       listener.apply(null, args);
     });
 
-    return instance;
   }
 
   function hasListeners(event) {
@@ -66,7 +61,6 @@ function Emitter() {
 
     removeItself.listener = listener;
     instance.on(event, removeItself);
-    return instance;
   }
 }
 

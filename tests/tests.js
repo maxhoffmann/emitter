@@ -49,12 +49,14 @@ test('off', function() {
   emitter.off('test', testListener);
   ok(!emitter.hasListeners('test'), 'removed a listener for a specific event');
 
-  emitter.on('test', testListener).on('test', anotherTestListener);
+  emitter.on('test', testListener);
+  emitter.on('test', anotherTestListener);
   ok(emitter.hasListeners('test'), 'added two listeners for a specific event');
   emitter.off('test');
   ok(!emitter.hasListeners('test'), 'removed both listeners for a specific event');
 
-  emitter.on('foo', testListener).on('bar', anotherTestListener);
+  emitter.on('foo', testListener);
+  emitter.on('bar', anotherTestListener);
   ok(emitter.hasListeners('foo'), 'added listener for first event');
   ok(emitter.hasListeners('bar'), 'added listener for second event');
   emitter.off();
