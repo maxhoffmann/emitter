@@ -1,14 +1,14 @@
 function Emitter() {
   var listeners = {};
 
-  var instance = Object.freeze({
+  var emitter = Object.freeze({
     on: on,
     off: off,
     trigger: trigger,
     hasListeners: hasListeners,
     once: once
   });
-  return instance;
+  return emitter;
 
   function on(event, listener) {
     if (!listeners[event]) listeners[event] = [];
@@ -21,7 +21,7 @@ function Emitter() {
     }
 
     var specificListeners = listeners[event];
-    if (!specificListeners) return instance;
+    if (!specificListeners) return;
 
     if (arguments.length === 1) {
       delete listeners[event];
@@ -39,7 +39,7 @@ function Emitter() {
     var args = [].slice.call(arguments, 1);
     var specificListeners = listeners[event];
 
-    if (!specificListeners) return instance;
+    if (!specificListeners) return;
 
     specificListeners = specificListeners.slice(0);
     specificListeners.forEach(function(listener) {
@@ -55,12 +55,12 @@ function Emitter() {
 
   function once(event, listener) {
     function removeItself() {
-      instance.off(event, removeItself);
+      emitter.off(event, removeItself);
       listener.apply(null, arguments);
     }
 
     removeItself.listener = listener;
-    instance.on(event, removeItself);
+    emitter.on(event, removeItself);
   }
 }
 
