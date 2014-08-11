@@ -10,7 +10,7 @@ Installation
 ------------
 
 ```bash
-npm install maxhoffmann/emitter --save
+npm install maxhoffmann-emitter --save
 ```
 
 Usage
