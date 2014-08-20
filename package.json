@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "tape test/index.js",
-    "test-browser": "browserify test/index.js | testling -u",
+    "test-local": "testling -u",
     "build": "webpack index.js dist/emitter.js --optimize-minimize --output-library Emitter --output-library-target umd --progress --colors"
   },
   "testling": {
