@@ -1,7 +1,7 @@
 Emitter
 =======
 
-[![NPM version][https://badge.fury.io/js/maxhoffmann-emitter.png]][https://badge.fury.io/js/maxhoffmann-emitter]
+[![NPM version][1]][2]
 
 Event emitter implementation using the “frozen closure” pattern as [described by Douglas Crockford](http://www.ustream.tv/recorded/46640057). Heavily inspired by [component/emitter](https://github.com/component/emitter).
 
@@ -58,3 +58,6 @@ LICENSE
 -------
 
 The MIT License
+
+  [1]: https://badge.fury.io/js/maxhoffmann-emitter.png
+  [2]: https://badge.fury.io/js/maxhoffmann-emitter
