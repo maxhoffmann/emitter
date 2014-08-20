@@ -5,8 +5,8 @@ Event emitter implementation using the “frozen closure” pattern as [describe
 
 Browser support: ES5 compatible browsers (IE9+)
 
-[![browser support](https://ci.testling.com/$YOUR_USERNAME_HERE/max-by.png)
-](https://ci.testling.com/$YOUR_USERNAME_HERE/max-by)
+[![browser support](https://ci.testling.com/maxhoffmann/emitter.png)
+](https://ci.testling.com/maxhoffmann/emitter)
 
 Installation
 ------------
