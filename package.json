@@ -8,9 +8,9 @@
     "url": "https://github.com/maxhoffmann/emitter.git"
   },
   "scripts": {
-    "build": "webpack index.js dist/emitter.js --optimize-minimize --output-library Emitter --output-library-target umd --progress --colors",
-    "test": "node test/emitter.js",
+    "test": "tape test/emitter.js",
     "test-browser": "browserify test/emitter.js | testling -u",
+    "build": "webpack index.js dist/emitter.js --optimize-minimize --output-library Emitter --output-library-target umd --progress --colors"
   },
   "testling": {
     "files": "test/*.js",
