@@ -57,5 +57,5 @@ LICENSE
 
 The MIT License
 
-  [1]: https://badge.fury.io/js/maxhoffmann-emitter.png
-  [2]: https://badge.fury.io/js/maxhoffmann-emitter
+  [1]: http://img.shields.io/npm/v/maxhoffmann-emitter.svg?style=flat
+  [2]: https://www.npmjs.org/package/maxhoffmann-emitter
