@@ -9,8 +9,9 @@
   },
   "scripts": {
     "test": "node test/index.js",
-    "test-nice": "tape test/index.js | tap-spec",
-    "test-local": "testling -u"
+    "test-node": "tape test/index.js | tap-spec",
+    "test-browser": "testling -u",
+    "build": "browserify index.js -s Emitter | uglifyjs > dist/emitter.js"
   },
   "testling": {
     "files": "test/index.js",
@@ -24,6 +25,7 @@
     "browserify": "^5.10.0",
     "tap-spec": "^0.2.1",
     "tape": "^2.14.0",
-    "testling": "^1.7.0"
+    "testling": "^1.7.0",
+    "uglify-js": "^2.4.15"
   }
 }
