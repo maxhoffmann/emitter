@@ -15,7 +15,7 @@
   "testling": {
     "files": "test/index.js",
     "browsers": [
-      "chrome/latest",
+      "chrome/latest"
     ]
   },
   "author": "Maximilian Hoffmann",
