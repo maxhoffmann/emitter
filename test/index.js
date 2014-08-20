@@ -1,5 +1,6 @@
-var Emitter = require('../');
 var test = require('tape');
+
+var Emitter = require('../');
 
 test('init', function(is) {
   is.plan(1);
