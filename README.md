@@ -10,6 +10,8 @@ Browser support: ES5 compatible browsers (IE9+)
 [![browser support](https://ci.testling.com/maxhoffmann/emitter.png)
 ](https://ci.testling.com/maxhoffmann/emitter)
 
+[![NPM][3]][4]
+
 Installation
 ------------
 
@@ -61,3 +63,5 @@ The MIT License
 
   [1]: https://badge.fury.io/js/maxhoffmann-emitter.png
   [2]: https://badge.fury.io/js/maxhoffmann-emitter
+  [3]: http://nodei.co/npm/maxhoffmann-emitter.png
+  [4]: http://nodei.co/npm/maxhoffmann-emitter
