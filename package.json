@@ -8,21 +8,14 @@
     "url": "https://github.com/maxhoffmann/emitter.git"
   },
   "scripts": {
-    "test": "tape test/emitter.js",
-    "test-browser": "browserify test/emitter.js | testling -u",
+    "test": "tape test/index.js",
+    "test-browser": "browserify test/index.js | testling -u",
     "build": "webpack index.js dist/emitter.js --optimize-minimize --output-library Emitter --output-library-target umd --progress --colors"
   },
   "testling": {
-    "files": "test/*.js",
+    "files": "test/index.js",
     "browsers": [
-      "ie/9..latest",
       "chrome/latest",
-      "firefox/latest",
-      "safari/latest",
-      "opera/latest",
-      "iphone/6..latest",
-      "ipad/6..latest",
-      "android-browser/4..latest"
     ]
   },
   "author": "Maximilian Hoffmann",
