@@ -8,9 +8,9 @@
     "url": "https://github.com/maxhoffmann/emitter.git"
   },
   "scripts": {
-    "test": "tape test/index.js",
-    "test-local": "testling -u",
-    "build": "webpack index.js dist/emitter.js --optimize-minimize --output-library Emitter --output-library-target umd --progress --colors"
+    "test": "node test/index.js",
+    "test-nice": "tape test/index.js | tap-spec",
+    "test-local": "testling -u"
   },
   "testling": {
     "files": "test/index.js",
@@ -22,6 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "browserify": "^5.10.0",
+    "tap-spec": "^0.2.1",
     "tape": "^2.14.0",
     "testling": "^1.7.0"
   }
